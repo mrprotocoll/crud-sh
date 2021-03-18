@@ -35,9 +35,14 @@ switch ($state){
         foreach ($_POST as $key => $val) {
             if (empty($val)) {
                $_SESSION['error'] = "all fields are required";
-               header("Location:../new");
+               header("Location:../upd?id=".$user->id);
                exit;
             } 
+        }
+        if (!filter_var($mail,FILTER_VALIDATE_EMAIL)){
+            $_SESSION['error'] = "Invalid Email";
+            header("Location:../upd?id=".$user->id);
+            exit;
         }
         if($user->update()){
             $_SESSION['success'] = "Record Updated Successfully";
