@@ -11,7 +11,7 @@ switch ($state){
                exit;
             } 
         }
-        if (!filter_var($mail,FILTER_VALIDATE_EMAIL)){
+        if (!filter_var($user->email,FILTER_VALIDATE_EMAIL)){
             $_SESSION['error'] = "Invalid Email";
             header("Location:../new.php");
             exit;
@@ -39,7 +39,7 @@ switch ($state){
                exit;
             } 
         }
-        if (!filter_var($mail,FILTER_VALIDATE_EMAIL)){
+        if (!filter_var($user->email,FILTER_VALIDATE_EMAIL)){
             $_SESSION['error'] = "Invalid Email";
             header("Location:../upd.php?id=".$user->id);
             exit;
