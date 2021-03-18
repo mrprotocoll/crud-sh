@@ -18,7 +18,7 @@ include_once("inc/model.php");
     </div>
     <div class="form">
         
-        <a href="new" class="btn btn-succ">Create New Record</a>   
+        <a href="new.php" class="btn btn-succ">Create New Record</a>   
         <div class="out">
             <?php echo Model::message() ?>
         </div>
@@ -49,7 +49,7 @@ include_once("inc/model.php");
                     <td><?php echo $val['email'] ?></td>
                     <td><?php echo $val['xdate'] ?></td>
                     <td>
-                        <a href="upd?id=<?php echo $val['id'] ?>" class="btn btn-pri">Edit</a>
+                        <a href="upd.php?id=<?php echo $val['id'] ?>" class="btn btn-pri">Edit</a>
                         <a href="inc/ctrl.php?ac=del&id=<?php echo $val['id'] ?>" onclick="return confirm('Are You Sure You Want to Delete this Record')" class="btn btn-red">Delete</a>
                     </td>
                 </tr>
