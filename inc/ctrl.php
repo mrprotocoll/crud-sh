@@ -7,18 +7,18 @@ switch ($state){
         foreach ($_POST as $key => $val) {
             if (empty($val)) {
                $_SESSION['error'] = "all fields are required";
-               header("Location:../new");
+               header("Location:../new.php");
                exit;
             } 
         }
         if (!filter_var($mail,FILTER_VALIDATE_EMAIL)){
             $_SESSION['error'] = "Invalid Email";
-            header("Location:../new");
+            header("Location:../new.php");
             exit;
         }
         if($user->emailExists()){
             $_SESSION['error'] = "Record Already Exist";
-            header("Location:../new");
+            header("Location:../new.php");
             exit;
         }
         if($user->create()){
@@ -27,7 +27,7 @@ switch ($state){
             exit;
         }else{
             $_SESSION['error'] = "Failed, Try Again";
-            header("Location:../new");
+            header("Location:../new.php");
             exit;
         }
     break;
@@ -35,13 +35,13 @@ switch ($state){
         foreach ($_POST as $key => $val) {
             if (empty($val)) {
                $_SESSION['error'] = "all fields are required";
-               header("Location:../upd?id=".$user->id);
+               header("Location:../upd.php?id=".$user->id);
                exit;
             } 
         }
         if (!filter_var($mail,FILTER_VALIDATE_EMAIL)){
             $_SESSION['error'] = "Invalid Email";
-            header("Location:../upd?id=".$user->id);
+            header("Location:../upd.php?id=".$user->id);
             exit;
         }
         if($user->update()){
@@ -50,7 +50,7 @@ switch ($state){
             exit;
         }else{
             $_SESSION['error'] = "Failed to Update Record, Try Again";
-            header("Location:../upd?id=".$user->id);
+            header("Location:../upd.php?id=".$user->id);
             exit;
         }
     break;
