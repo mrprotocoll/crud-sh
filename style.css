@@ -1,0 +1,170 @@
+
+.pb-3{
+    padding-bottom:10px;
+}
+.form{
+    width: 70%;
+    padding: 30px;
+    margin:0 auto;
+}
+.form2{
+    width: 40%;
+    padding: 30px;
+    margin:0 auto;
+    border: 1px solid grey;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 760px) {
+    .form{
+        width: 60%;
+    }
+    .form2{
+        width: 90%;
+        margin:0 auto;
+    }
+    .ree{
+        width: 95% !important;
+    }
+}
+@media (max-width: 540px) {
+    .form{
+        width: 95%;
+    }
+    .form2{
+        width: 95%;
+        padding: 15px;
+        margin:0 auto;
+        border: 1px solid white;
+    }
+    .ree{
+        width: 950%;
+    }
+    td{
+        font-size: 11px;
+        padding: 0px !important;
+    }
+}
+
+.table{
+    width: 100%;
+    border: 1px solid gray;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+a{
+    text-decoration: none;
+    margin: 10px 0 !important;
+}
+th{
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+p{
+    font-size: 16px;
+    font-weight: 700;
+}
+td{
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 13px;
+    padding: 10px 10px;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-red{
+    color: red;
+}
+.input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+    color: gray;
+}
+.submit{
+    width: 200px;
+    background-color: gray;
+    color: white;
+    height: 40px;
+    margin-top: 10px;
+}
+span{
+    font-weight: bold;
+}
+.clear{
+    clear: both;
+    padding: 10px;
+}
+.ree{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.ree button{
+    float: right;
+}
+.ree h4{
+    float: left;
+    margin: 0 !important;
+    padding: 0px !important;
+}
+.success{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(17, 211, 137, 0.6);
+}
+.error{
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(211, 40, 17, 0.6);
+}
+.btn-pri{
+    padding: 5px 7px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgb(16, 77, 209) ;
+}
+.btn-pri:hover{
+    background-color: white;
+    color: rgb(16, 77, 209);
+    border: 1px solid rgb(16, 77, 209) ;
+}
+.btn-red{
+    padding: 5px 7px;
+    background-color: rgb(255, 60, 0);
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgb(255, 60, 0);
+}
+.btn-red:hover{
+    background-color: white;
+    color: rgb(255, 60, 0);
+    border: 1px solid rgb(255, 60, 0);
+}
+.btn-succ{
+    padding: 10px 20px;
+    background-color: rgb(6, 179, 78);
+    color: white;
+    font-size: 17px;
+}
+.btn-succ:hover{
+    background-color: rgb(0, 132, 255);
+    color: rgb(255, 255, 255);
+}
+.btn{
+    margin: 10px 0 !important;
+    border-radius: 3px;
+} 
