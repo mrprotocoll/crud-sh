@@ -14,7 +14,7 @@ $data = $user->getRecord($user->treat($_GET['id']))[0];
 </head>
 <body>
     <div class="form2" >
-        <h1>Create New Record</h1>
+        <h1>Update Record</h1>
         <div class="">
             <?php echo Model::message() ?> 
         </div>
